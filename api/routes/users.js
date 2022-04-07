@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const User = require("../models/User");
 const CryptoJS = require("crypto-js");
-const verify = require("../verifyToken");
+const verify = require("../utils/verifyToken");
 
 //UPDATE
 router.put("/:id", verify, async (req, res) => {
@@ -45,7 +45,6 @@ router.delete("/:id", verify, async (req, res) => {
 });
 
 //GET
-
 router.get("/find/:id", async (req, res) => {
   try {
     const user = await User.findById(req.params.id);
