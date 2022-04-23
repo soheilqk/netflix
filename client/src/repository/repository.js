@@ -29,3 +29,16 @@ export const getMovie = async (itemId) => {
     console.log(err);
   }
 };
+
+export const getRandomContent = async (type) => {
+  try {
+    const res = await axios.get(`/movies/random?type=${type}`, {
+      headers: {
+        token: "Bearer " + JSON.parse(localStorage.getItem("user")).accessToken,
+      },
+    });
+    return res.data[0];
+  } catch (err) {
+    console.log(err);
+  }
+};
