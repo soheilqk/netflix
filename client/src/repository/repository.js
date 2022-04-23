@@ -16,3 +16,16 @@ export const getRandomLists = async (type, genre) => {
     console.log(err);
   }
 };
+
+export const getMovie = async (itemId) => {
+  try {
+    const res = await axios.get("/movies/find/" + itemId, {
+      headers: {
+        token: "Bearer " + JSON.parse(localStorage.getItem("user")).accessToken,
+      },
+    });
+    return res.data;
+  } catch (err) {
+    console.log(err);
+  }
+};
