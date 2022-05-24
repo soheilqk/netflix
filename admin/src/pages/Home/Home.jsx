@@ -1,5 +1,7 @@
 import Chart from "../../components/Chart/Chart";
 import FeaturedInfo from "../../components/FeaturedInfo/FeaturedInfo";
+import WidgetLg from "../../components/WidgetLg/WidgetLg";
+import WidgetSm from "../../components/WidgetSm/WidgetSm";
 import { userData } from "../../dummyData";
 import "./home.css";
 
@@ -13,6 +15,10 @@ const Home = () => {
         grid
         dataKey="Active User"
       />
+      <div className="homeWidgets">
+        <WidgetSm />
+        <WidgetLg />
+      </div>
     </div>
   );
 };
