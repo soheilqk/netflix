@@ -31,10 +31,11 @@
   display: flex;
   align-items: center;
   border-radius: 10px;
+  background-color: inherit;
 }
 
-.sidebarListItem.active,
-.sidebarListItem:hover {
+.link.active,
+.link:hover {
   background-color: rgb(240, 240, 255);
 }
 
