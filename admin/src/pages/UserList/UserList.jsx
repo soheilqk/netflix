@@ -62,7 +62,13 @@ const UserList = () => {
   ];
 
   return (
-    <div className="userList">
+    <div className="usersList">
+      <div className="usersTitleContainer">
+        <h1 className="usersTitle">Users List</h1>
+        <Link to="/users/new">
+          <button className="userAddButton">Create</button>
+        </Link>
+      </div>
       <DataGrid
         rows={data}
         columns={columns}

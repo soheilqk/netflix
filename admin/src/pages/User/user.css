@@ -6,23 +6,15 @@
 .userTitleContainer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.userAddButton {
-  width: 80px;
-  border: none;
-  padding: 5px;
-  background-color: teal;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
-  font-size: 16px;
+.userTitle {
+  margin-left: 6px;
 }
 
 .userContainer {
   display: flex;
-  margin-top: 20px;
 }
 
 .userShow {
@@ -109,7 +101,7 @@
 }
 
 .userUpdateItem > label {
-  margin-bottom: 5px;
+  margin-bottom: -4px;
   font-size: 14px;
 }
 
@@ -118,6 +110,7 @@
   width: 250px;
   height: 30px;
   border-bottom: 1px solid gray;
+  margin: 5px 0;
 }
 
 .userUpdateRight {

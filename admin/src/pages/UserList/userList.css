@@ -1,10 +1,29 @@
-.userList {
+.usersList {
   flex: 4;
+  padding: 20px;
 }
 
 .userListUser {
   display: flex;
   align-items: center;
+}
+
+.usersTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.userAddButton {
+  width: 80px;
+  border: none;
+  padding: 5px;
+  background-color: teal;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
 }
 
 .userListImg {

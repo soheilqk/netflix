@@ -1,4 +1,5 @@
 import {
+  ArrowBackRounded,
   CalendarToday,
   LocationSearching,
   MailOutline,
@@ -6,17 +7,21 @@ import {
   PhoneAndroid,
   Publish,
 } from "@mui/icons-material";
-import { Link } from "react-router-dom";
+import { IconButton } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 import "./user.css";
 
 const User = () => {
+  const navigate = useNavigate();
+  const handleBack = () => navigate(-1);
+
   return (
     <div className="user">
       <div className="userTitleContainer">
+        <IconButton>
+          <ArrowBackRounded onClick={handleBack} />
+        </IconButton>
         <h1 className="userTitle">Edit User</h1>
-        <Link to="/newUser">
-          <button className="userAddButton">Create</button>
-        </Link>
       </div>
       <div className="userContainer">
         <div className="userShow">
