@@ -5,11 +5,14 @@
 
 .newUserHeader {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .newUserForm {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  box-shadow: 0px 0px 15px -10px rgb(0 0 0 / 75%);
+  padding: 10px;
 }
 
 .newUserItem {

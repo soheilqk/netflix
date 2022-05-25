@@ -7,3 +7,13 @@
   text-decoration: none;
   color: inherit;
 }
+
+::-webkit-file-upload-button {
+  padding: 7px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
