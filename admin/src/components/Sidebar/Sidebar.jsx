@@ -4,7 +4,6 @@ import {
   Timeline,
   TrendingUp,
   PermIdentity,
-  Storefront,
   AttachMoney,
   BarChart,
   MailOutline,
@@ -12,6 +11,7 @@ import {
   ChatBubbleOutline,
   WorkOutline,
   Report,
+  PlayCircleOutlined,
 } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
 
@@ -47,10 +47,10 @@ const Sidebar = () => {
                 Users
               </li>
             </NavLink>
-            <NavLink to="/products" className="link">
+            <NavLink to="/movies" className="link">
               <li className="sidebarListItem">
-                <Storefront className="sidebarIcon" />
-                Products
+                <PlayCircleOutlined className="sidebarIcon" />
+                Movies
               </li>
             </NavLink>
             <li className="sidebarListItem">

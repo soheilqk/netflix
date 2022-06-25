@@ -6,3 +6,7 @@
   display: flex;
   margin: 20px;
 }
+.chartContainer {
+  height: fit-content;
+  margin: 20px;
+}

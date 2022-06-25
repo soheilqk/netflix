@@ -15,7 +15,14 @@ router.post("/register", async (req, res) => {
   });
   try {
     const user = await newUser.save();
-    res.status(201).json(user);
+    const accessToken = jwt.sign(
+      { id: user._id, isAdmin: user.isAdmin },
+      process.env.SECRET_KEY,
+      { expiresIn: "5d" }
+    );
+    const { password, ...info } = user._doc;
+
+    res.status(201).json({ ...info, accessToken });
   } catch (err) {
     res.status(500).json(err);
   }
