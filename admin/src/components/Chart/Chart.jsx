@@ -7,6 +7,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import React from "react";
 
 const Chart = ({ title, data, dataKey, grid }) => {
   return (

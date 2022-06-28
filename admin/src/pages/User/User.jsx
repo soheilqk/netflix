@@ -10,6 +10,7 @@ import {
 import { IconButton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import "./user.css";
+import React from "react";
 
 const User = () => {
   const navigate = useNavigate();

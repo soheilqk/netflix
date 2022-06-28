@@ -4,6 +4,7 @@ import { DeleteOutline } from "@mui/icons-material";
 import { userRows } from "../../dummyData";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import React from "react";
 
 const UserList = () => {
   const [data, setData] = useState(userRows);

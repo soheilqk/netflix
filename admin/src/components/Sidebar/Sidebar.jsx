@@ -4,7 +4,6 @@ import {
   Timeline,
   TrendingUp,
   PermIdentity,
-  AttachMoney,
   BarChart,
   MailOutline,
   DynamicFeed,
@@ -14,6 +13,8 @@ import {
   PlayCircleOutlined,
 } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
+import React from "react";
+import { List } from "@mui/material";
 
 const Sidebar = () => {
   return (
@@ -53,10 +54,12 @@ const Sidebar = () => {
                 Movies
               </li>
             </NavLink>
-            <li className="sidebarListItem">
-              <AttachMoney className="sidebarIcon" />
-              Transactions
-            </li>
+            <NavLink to="/lists" className="link">
+              <li className="sidebarListItem">
+                <List className="sidebarIcon" />
+                Lists
+              </li>
+            </NavLink>
             <li className="sidebarListItem">
               <BarChart className="sidebarIcon" />
               Reports

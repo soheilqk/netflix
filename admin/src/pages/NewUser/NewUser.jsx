@@ -2,6 +2,7 @@ import { ArrowBackRounded } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import "./newUser.css";
+import React from "react";
 
 const NewUser = () => {
   const navigate = useNavigate();

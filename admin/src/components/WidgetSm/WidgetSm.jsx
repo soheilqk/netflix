@@ -3,6 +3,7 @@ import { Visibility } from "@mui/icons-material";
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { AuthContext } from "../../context/AuthContext/AuthContext";
+import React from "react";
 
 const WidgetSm = () => {
   const [newUsers, setNewUsers] = useState([]);

@@ -1,4 +1,5 @@
 import "./widgetLg.css";
+import React from "react";
 
 const WidgetLg = () => {
   const Button = ({ type }) => {

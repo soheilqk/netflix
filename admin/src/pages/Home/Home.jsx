@@ -6,6 +6,7 @@ import "./home.css";
 import { useContext, useEffect, useMemo, useState } from "react";
 import axios from "axios";
 import { AuthContext } from "../../context/AuthContext/AuthContext";
+import React from "react";
 
 const Home = () => {
   const { user } = useContext(AuthContext);
@@ -37,7 +38,7 @@ const Home = () => {
             token: `Bearer ${user.accessToken}`,
           },
         });
-        const statsList = res.data.sort(function (a, b) {
+        const statsList = res.data.sort(function(a, b) {
           return a._id - b._id;
         });
         statsList.map((item) =>
