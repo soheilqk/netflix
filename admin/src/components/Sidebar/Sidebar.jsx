@@ -11,10 +11,10 @@ import {
   WorkOutline,
   Report,
   PlayCircleOutlined,
+  List,
 } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
 import React from "react";
-import { List } from "@mui/material";
 
 const Sidebar = () => {
   return (
